@@ -1,0 +1,17 @@
+form.search div,
+form.search button,
+form.search label,
+form.search input {
+	display: inline;
+	width: auto;
+	height: auto;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	
+}
+form.search input[type='text'] {
+	width:30%;
+	height: 2em;
+}
