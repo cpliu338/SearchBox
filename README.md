@@ -47,16 +47,18 @@ public function index() {
 }
 
 // in your Template, 
-    <?= $this->SearchBox->create(null, [
-    	'input'=>['value'=>$value, 'label'=>'name contains'],
+    <?= $this->SearchBox->create($SearchFilterViewVars, [
+    	'filter'=>['label'=>'columnX contains'],
+    	'only'=>['label'=>'special case'],
     	'filter_button'=>['class'=>'filter'],
     	'reset_button'=>['class'=>'reset']
 	])?>
 
 
 // button have pre-defined classes if using Bootstrap FormHelper, use bootstrap-type instead of class
-    <?= $this->SearchBox->create(null, [
-    	'input'=>['value'=>$value, 'label'=>'name contains'],
+    <?= $this->SearchBox->create($SearchFilterViewVars, [
+    	'filter'=>['label'=>'columnX contains'],
+    	'only'=>['label'=>'special case'],
     	'filter_button'=>['bootstrap-type'=>'primary'],
     	'reset_button'=>['bootstrap-type'=>'default']
 	])?>
