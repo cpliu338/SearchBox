@@ -35,8 +35,8 @@ SCRIPT;
 		return $this->Form->create(null, ['type'=>'get','class'=>'search']) .
 		$this->Form->input('filter', array_merge(['id'=>'filter','value'=>$model['filter']],$options['filter'])) .
 		$only .
-		$this->Form->button('Filter', $options['filter_button']) .
-		$this->Form->button('Reset', array_merge(['id'=>'reset'],$options['reset_button'])) .
+		$this->Form->button($this->Html->icon('filter'), array_merge(['escape'=>false], $options['filter_button'])) .
+		$this->Form->button($this->Html->icon('remove'), array_merge(['id'=>'reset'],array_merge(['escape'=>false], $options['reset_button']))) .
 		$this->Form->end() . 
 		$script;
 	}
